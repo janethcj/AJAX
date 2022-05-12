@@ -11,12 +11,12 @@
 	</head>
 	<body>
 		<h1>Formulario</h1>
-		<form id="formulario">
+		<form id="formulario" onSubmit="return checkForm(this);">
 			<label for="nombre">Nombre:</label><br>
-			<input type="text" name="nombre" id="nombre" required="required"><br><br>
+			<input type="text" name="nombre" id="nombre" required="required" onblur="checkField(this);"><br>
 
 			<label for="ciudad">Ciudad:</label><br>
-			<input type="text" name="ciudad" id="ciudad" required="required"><br><br>
+			<input type="text" name="ciudad" id="ciudad" required="required" onblur="checkField(this);"><br>
 
 			<button type="button" id="enviar">Enviar</button>
 
